@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ReSell</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>ReSell</h1>
+        <p>Buy & Sell Used Products</p>
+    </header>
+
+    <section>
+        <h2>Available Products</h2>
+
+        <input
+            id="search"
+            type="text"
+            placeholder="Search products"
+            oninput="show()"
+        >
+
+        <div id="products"></div>
+    </section>
+
+    <section>
+        <h2>Sell Your Product</h2>
+
+        <input
+            id="img"
+            type="url"
+            placeholder="Product Image URL"
+        >
+
+        <input
+            id="name"
+            type="text"
+            placeholder="Product Name"
+        >
+
+        <input
+            id="price"
+            type="number"
+            placeholder="Price"
+        >
+
+        <select id="cat">
+            <option>Electronics</option>
+            <option>Books</option>
+            <option>Furniture</option>
+            <option>Others</option>
+        </select>
+
+        <textarea
+            id="desc"
+            placeholder="Product Description"
+        ></textarea>
+
+        <button onclick="add()">Add Product</button>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
